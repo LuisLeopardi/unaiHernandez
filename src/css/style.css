@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  word-break: break-all;
+}
+
+.App {
+  padding-bottom: 5vh;
+}
+
+.navbar {
+  height: 60px;
+  padding: 5px;
+  background-color: #f3f3f3;
+}
+.navbar a, .navbar img {
+  height: 100%;
+}
+
+.headerImg {
+  width: 100%;
+}
+
+.mainHeader {
+  padding: 10vh 0 10vh 0;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 110%;
+}
+
+.postSection {
+  width: 100%;
+  padding-top: 10px;
+  background-color: #f0f0f0;
+}
+
+.post {
+  padding: 10px;
+  width: 98%;
+  margin: 10px 0 10px 2%;
+  display: flex;
+  flex-direction: column;
+}
+.post p {
+  margin: 10px 0 10px 0;
+}
+.post h1 {
+  margin: 0 0 5px 0;
+}
+.post a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.post a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.post i {
+  width: 100%;
+}
+.post::after {
+  position: absolute;
+  content: "";
+  left: -1%;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #00c3ff;
+}
+
+.fullPost {
+  padding: 10px;
+}
+.fullPost h1 {
+  letter-spacing: 5px;
+}
+.fullPost p {
+  margin-top: 10px;
+}
+
+.admin {
+  padding: 10px;
+}
+
+.adminButtonWrap {
+  margin-top: 10px;
+}
+.adminButtonWrap button {
+  margin: 0 5px 0 5px;
+}
+
+.adminHeader {
+  font-size: 120%;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .mainHeader {
+    font-size: 140%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

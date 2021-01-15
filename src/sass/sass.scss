@@ -1,0 +1,111 @@
+@import './config.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    word-break: break-all;
+}
+
+.App {
+    padding-bottom: 5vh;
+}
+
+.navbar {
+    height: 60px;
+    padding: 5px;
+    background-color: rgb(243, 243, 243);
+    a, img{
+        height: 100%;
+    }
+}
+
+.headerImg {
+    width: 100%;
+}
+
+.mainHeader {
+    padding: 10vh 0 10vh 0;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 110%;
+}
+
+.postSection {
+    width: 100%;
+    padding-top: 10px;
+    background-color:  rgb(240, 240, 240);
+}
+
+.post {
+    padding: 10px;
+    width: 98%;
+    margin: 10px 0 10px 2%;
+    display: flex;
+    flex-direction: column;
+    p {
+        margin: 10px 0 10px 0;
+    }
+    h1 {
+        margin: 0 0 5px 0;
+    }
+    a {
+        @include flex-center-center;
+        color: #fff;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    i {
+        width: 100%;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        left: -1%;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background-color: rgb(0, 195, 255);
+    }
+}
+
+.fullPost {
+    padding: 10px;
+    h1 {
+        letter-spacing: 5px;
+    }
+    p {
+        margin-top: 10px;
+    }
+}
+
+.admin {
+    padding: 10px;
+}
+
+.adminButtonWrap {
+    margin-top: 10px;
+    button {
+        margin: 0 5px 0 5px;
+    }
+}
+
+.adminHeader {
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .mainHeader {
+        font-size: 140%;
+    }
+}
